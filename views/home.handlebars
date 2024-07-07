@@ -1,0 +1,36 @@
+<form id="form" action="/cadastrar" method="POST" enctype="multipart/form-data">
+    <div class="mb-3 text-start">
+        <label class="form-label">Nome</label>
+        <input type="text" name="nome" class="form-control" required id="nome">
+    </div>
+    <div class="mb-3 text-start">
+        <label class="form-label">Tarja</label>
+        <input type="text" name="tarja" class="form-control" required id="tarja">
+    </div>
+    <div class="mb-3 text-start">
+        <label class="form-label">Laboratório</label>
+        <input type="text" name="laboratorio" class="form-control" required id="laboratorio">
+    </div>
+    <div class="mb-3 text-start">
+        <label class="form-label">Valor de Compra</label>
+        <input type="number" name="compra" class="form-control" required id="compra">
+    </div>
+    <div class="mb-3 text-start">
+        <label class="form-label">Valor de Venda</label>
+        <input type="number" name="venda" class="form-control" required id="venda">
+    </div>
+
+    <div class="mb-3 text-start">
+        <label class="form-label">Observação</label>
+        <textarea name="observacao" class="form-control" required id="observacao" style="height: 100px"></textarea>
+    </div>
+
+    <div class="mb-3 text-start">
+        <label class="form-label">Imagem:</label><br>
+        <input style="background-color: white;" required type="file" id="imagem" name="imagem" accept="image/*">
+    </div>
+    
+    <div class="mt-5 text-start">
+        <button type="submit" class="btn btn-danger w-100">Cadastrar</button>
+    </div>
+</form>

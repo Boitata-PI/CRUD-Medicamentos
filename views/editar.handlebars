@@ -1,0 +1,31 @@
+<form id="form-edit" action="/editar/{{medicamento.id}}" method="POST">
+    <div class="mb-3 text-start">
+        <label class="form-label">Nome</label>
+        <input type="text" name="nome" class="form-control" required id="nome" value="{{medicamento.nome}}">
+    </div>
+    <div class="mb-3 text-start">
+        <label class="form-label">Tarja</label>
+        <input type="text" name="tarja" class="form-control" required id="tarja" value="{{medicamento.tarja}}">
+    </div>
+    <div class="mb-3 text-start">
+        <label class="form-label">Laboratório</label>
+        <input type="text" name="laboratorio" class="form-control" required id="laboratorio" value="{{medicamento.laboratorio}}">
+    </div>
+    <div class="mb-3 text-start">
+        <label class="form-label">Valor de Compra</label>
+        <input type="number" name="compra" class="form-control" required id="compra" value="{{medicamento.compra}}">
+    </div>
+    <div class="mb-3 text-start">
+        <label class="form-label">Valor de Venda</label>
+        <input type="number" name="venda" class="form-control" required id="venda" value="{{medicamento.venda}}">
+    </div>
+
+    <div class="mb-3 text-start">
+        <label class="form-label">Observação</label>
+        <textarea name="observacao" class="form-control" required id="observacao" style="height: 100px">{{medicamento.observacao}}</textarea>
+    </div>
+    
+    <div class="mt-5 text-start">
+        <button type="submit" class="btn btn-danger w-100">Alterar</button>
+    </div>
+</form>
